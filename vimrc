@@ -27,7 +27,15 @@ set laststatus=2
 set statusline=%F%m%r%h%w\ [文件格式=%{&ff}]\ [文件类型=%Y]\ [当前位置=%04l,%04v][%p%%]\ [文件总行数=%L]
 "设置匹配模式
 set showmatch
-
+"设置补齐样式
+set completeopt=longest,menu
+"完成配对，下次写上对if、for、while、switch等固定格式的配对
+inoremap ( ()<LEFT>
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+"inoremap )
+"inoremap }
+"inoremap ]
 
 """""""""""""ctags设置"""""""""""""""""""
 "易热开发ctags文件
@@ -44,7 +52,7 @@ map <F12> :TlistToggle<CR>
 
 """""""""""""C语言设置""""""""""""""""""
 "C语言编译和运行
-map <F5> :call ComplieRunGcc()<CR>
+map <F6> :call ComplieRunGcc()<CR>
 func! ComplieRunGcc()
 exec "w"
 exec "!gcc %-o %<"
@@ -57,7 +65,7 @@ au BufRead,BufNewFile *.go set filetype=go
 "gocode自动补齐
 imap <C-f> <C-x><C-o>
 "go语言编译
-map <C-b> :call ComplieGo()<CR>
+map <F5> :call ComplieGo()<CR>
 func! ComplieGo()
 exec "w"
 exec "!go build"
