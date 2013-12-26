@@ -29,10 +29,10 @@ set statusline=%F%m%r%h%w\ [文件格式=%{&ff}]\ [文件类型=%Y]\ [当前位�
 set showmatch
 "设置补齐样式
 set completeopt=longest,menu
-"完成配对，下次写上对if、for、while、switch等固定格式的配对
-inoremap ( ()<LEFT>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
+"完成配对
+"inoremap ( ()<LEFT>
+"inoremap { {}<LEFT><CR><CR><UP><Tab>
+"inoremap [ []<LEFT>
 "inoremap )
 "inoremap }
 "inoremap ]

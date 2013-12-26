@@ -123,3 +123,7 @@ export PS1
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
 gocode
+alias unix2dos=todos
+alias dos2unix=fromdos
+alias updateeasy='svn update /home/wsk/golang/src/easy'
+alias ctageasy='ctags -R /home/wsk/golang/src/easy'
