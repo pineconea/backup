@@ -37,7 +37,6 @@ set statusline=%F%m%r%h%w\ [文件格式=%{&ff}]\ [文件类型=%Y]\ [当前位�
 "设置匹配模式
 set showmatch
 "设置补齐样式
-<<<<<<< HEAD
 "set completeopt=preview,menu
 set completeopt=menu,longest
 "Vundle配置
@@ -73,11 +72,9 @@ Bundle 'undx/vim-gocode'
 """""""""""""ctags设置"""""""""""""""""""
 "易热开发ctags文件
 set tags=/home/easy/golang/src/tags
-=======
 """""""""""""ctags设置"""""""""""""""""""
 "易热开发ctags文件
 set tags=/home/wsk/golang/src/easy/tags
->>>>>>> d9256c47b1844cda3ac77a0587ed8b482afded18
 map <F2> <C-]>
 
 
