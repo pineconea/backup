@@ -7,6 +7,13 @@ set nocompatible
 filetype plugin on 
 "关闭文件类型自动检测(使用Vundle进行管理)
 filetype off
+"""""""""""""""VIM基本配置""""""""""""""""" 
+"取消vi模式
+set nocompatible
+"允许插件
+filetype plugin on 
+"打开文件类型自动检测
+filetype on
 "开启语法高亮 
 syntax on 
 "设置VIM记录条数
@@ -30,6 +37,7 @@ set statusline=%F%m%r%h%w\ [文件格式=%{&ff}]\ [文件类型=%Y]\ [当前位�
 "设置匹配模式
 set showmatch
 "设置补齐样式
+<<<<<<< HEAD
 "set completeopt=preview,menu
 set completeopt=menu,longest
 "Vundle配置
@@ -37,6 +45,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
+set completeopt=longest,menu
 "完成配对
 "inoremap ( ()<LEFT>
 "inoremap { {}<LEFT><CR><CR><UP><Tab>
@@ -64,6 +73,11 @@ Bundle 'undx/vim-gocode'
 """""""""""""ctags设置"""""""""""""""""""
 "易热开发ctags文件
 set tags=/home/easy/golang/src/tags
+=======
+"""""""""""""ctags设置"""""""""""""""""""
+"易热开发ctags文件
+set tags=/home/wsk/golang/src/easy/tags
+>>>>>>> d9256c47b1844cda3ac77a0587ed8b482afded18
 map <F2> <C-]>
 
 
