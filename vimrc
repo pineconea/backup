@@ -59,6 +59,9 @@ Bundle 'dgryski/vim-godef'
 Bundle 'majutsushi/tagbar'
 "golang 自动补全
 Bundle 'undx/vim-gocode'
+"pythone 插件
+Bundle 'rkulla/pydiction'
+
 
 
 """""""""""""ctags设置"""""""""""""""""""
