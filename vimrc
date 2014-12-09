@@ -108,7 +108,7 @@ let g:tagbar_type_go = {
 
 """""""""""""C语言设置""""""""""""""""""
 "C语言编译和运行
-map <F6> :call ComplieRunGcc()<CR>
+"map <F6> :call ComplieRunGcc()<CR>
 func! ComplieRunGcc()
 exec "w"
 exec "!gcc %-o %<"
@@ -128,4 +128,10 @@ exec "!go build"
 endfunc
 
 """""""""""python设置"""""""""""""""""
-let g:pydiction_location = '/home/easy/.vim/bundle/pydiction/complete-dict'
+let g:pydiction_location = '/home/wsk/.vim/bundle/pydiction/complete-dict'
+"一键运行python
+map <F6> :call ComplieRunGcc()<CR>
+func! ComplieRunGcc()
+exec "w"
+exec "!python %"
+endfunc
